@@ -1,0 +1,82 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:ecommerce >------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ ecommerce ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ ecommerce ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 20 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ ecommerce ---
+[INFO] skip non existing resourceDirectory D:\castlevania\springboot tution\ecommerce\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ ecommerce ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ ecommerce ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.ecommerce.EcommerceApplicationTests
+23:07:57.279 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ecommerce.EcommerceApplicationTests]: EcommerceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:07:57.391 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ecommerce.EcommerceApplication for test class com.example.ecommerce.EcommerceApplicationTests
+23:07:57.469 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ecommerce.EcommerceApplicationTests]: EcommerceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:07:57.471 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ecommerce.EcommerceApplication for test class com.example.ecommerce.EcommerceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-07T23:07:57.775+05:30  INFO 24212 --- [ecommerce] [           main] c.e.ecommerce.EcommerceApplicationTests  : Starting EcommerceApplicationTests using Java 21.0.11 with PID 24212 (started by gaura in D:\castlevania\springboot tution\ecommerce)
+2026-08-07T23:07:57.778+05:30  INFO 24212 --- [ecommerce] [           main] c.e.ecommerce.EcommerceApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-08-07T23:07:58.482+05:30  INFO 24212 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-07T23:07:58.540+05:30  INFO 24212 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-08-07T23:07:58.931+05:30  INFO 24212 --- [ecommerce] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-07T23:07:59.015+05:30  INFO 24212 --- [ecommerce] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-07T23:07:59.559+05:30  INFO 24212 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-07T23:07:59.594+05:30  INFO 24212 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-07T23:07:59.764+05:30  INFO 24212 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c06b1bc
+2026-08-07T23:07:59.765+05:30  INFO 24212 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-07T23:07:59.825+05:30  INFO 24212 --- [ecommerce] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/ecommerce]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: ecommerce/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-07T23:08:00.765+05:30  INFO 24212 --- [ecommerce] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-07T23:08:00.840+05:30  INFO 24212 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07T23:08:00.913+05:30  INFO 24212 --- [ecommerce] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-07T23:08:01.705+05:30  WARN 24212 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-07T23:08:02.137+05:30  INFO 24212 --- [ecommerce] [           main] c.e.ecommerce.EcommerceApplicationTests  : Started EcommerceApplicationTests in 4.611 seconds (process running for 5.669)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.426 s -- in com.example.ecommerce.EcommerceApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.256 s
+[INFO] Finished at: 2026-08-07T23:08:02+05:30
+[INFO] ------------------------------------------------------------------------
