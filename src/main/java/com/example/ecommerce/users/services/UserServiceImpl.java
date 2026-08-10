@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("Email is already registered.");
         }
 
-        // Hash the password securely with BCrypt
+       
         String hashedPassword = BCrypt.hashpw(request.getPassword(), BCrypt.gensalt());
 
         User user = User.builder()
